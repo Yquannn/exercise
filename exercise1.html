@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+
+    }
+
+    body {
+      background-color: rgb(23, 23, 46);
+      margin: 0;
+
+    }
+  
+    .content{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      /* text-align: center; */
+    }
+
+    .ceo-name {
+      font-size: 52px;
+    }
+
+    .picture-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .picture {
+      height: 330px;
+      width: 330px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .text-container {
+
+      max-width: 20%;
+      margin: 16px;
+      padding: 20px;
+      color: black;
+    }
+
+    .description {
+      line-height: 22px;
+    }
+
+    .read-more {
+      padding: 14px 38px;
+      border: none;
+      background-color: rgb(170, 47, 47);
+      margin: 12px 0;
+      color: white;
+      cursor: pointer;
+    }
+
+
+    @media (max-width: 768px) {
+      .text-container {
+        max-width: 60%;
+        margin-left: -8px;
+      }
+      .picture {
+        height: 250px;
+        width: 250px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .text-container {
+        max-width: 80%;
+        margin-left: -4px;
+      }
+      .picture {
+        height: 200px;
+        width: 200px;
+      }
+      .ceo-name {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="content">
+    <div class="container">
+      <div class="picture-container">
+        <div>
+          <img class="picture" src="img/p03c84wz.jpg" alt="">
+          <p class="profile-link">Elon @ SpaceX</p>
+        </div>
+      </div>
+      <div class="text-container">
+        <p class="ceo-name">Elon Musk</p>
+        <div class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, vel! Excepturi neque doloremque maxime nostrum corporis veniam quaerat quisquam sequi, esse, alias culpa, consectetur ducimus adipisci beatae. Alias, repudiandae voluptate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita quaerat hic facere maxime vitae molestiae, explicabo possimus provident, beatae saepe ab libero nemo eos perspiciatis? Nobis similique harum ut quas! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quibusdam, ab a, animi laborum ipsa nisi repudiandae quaerat eum corrupti architecto rem perspiciatis beatae fuga, suscipit modi corporis dolorum dolor!
+        </div>
+        <button class="read-more">READ MORE</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
